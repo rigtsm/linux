@@ -44,7 +44,9 @@
 9) Man pages usign it for everything information.
 
 
+10) Print Unix user identity
 
+        sudo chown $(id -u):$(id -g) $HOME/.kube/config
 
 
 
