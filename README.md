@@ -23,12 +23,41 @@
 - /var  : variable directory, files and directories which are expected to grow in size
 - /home : where every user stores his personal files and documents and application settings (hiddin files)
      
+## Ubuntu package manager APT
+     
+     sudo apt update # update the source list
+     sudo apt upgrade # upgrade the packages
      
      
+     apt search firefox
+     
+     sudo apt install nano
+     apt show nano
+     sudo apt remove nano
+     sudo apt purge nano # remove the configuration settings
+     sudo apt autoremove # packages not longer needed
+     sudo apt edit-sources # change the source lists
+     poweroffss
+
+
+## Bash Shortcuts
+     
+     Ctrl a # line beginning
+     Ctrl i # end of the line
+     Ctrl r # serch a command
+     ln -s file1 file2link # create file2link to link to file1, pointer to file1
+     head/tail # 10 lines of the file
+     tail -f /var/log # follow the file in real time, detached
+     shutdown -h now #turn the machine off
+     poweroff
+     
+     
+
+
 ## Interview Questions
 1) How to check the kernel version of a [Linux system](https://www.youtube.com/watch?v=l0QGLMwR-lY)?
   
-        uname -a
+          uname -a
     
 2) How to see the current IP address on Linux?
 
@@ -38,7 +67,8 @@
 3) How to check for free disk space in Linux?
 
         df -ah # disk free
-
+        df -h
+        
 4) How to see if a Linux service is running?
 
         systemctl status <service>
@@ -50,7 +80,9 @@
 6) How to check for open ports in Linux?
 
         netstat 
-        netstat -lepunt
+        netstat -lepunt (tulpn)
+        
+        ss -tunapl
 
 7) How to check Linux process information (CPU usage, memory, user information, etc.)?
 
@@ -78,17 +110,33 @@
     
         cat /proc/cpuinfo
 
+12) rsynk command
 
 
+13) Add a new user
+     
+        id                            # user information
+        id user                       # specific user information
+        sudo useradd mom              # add a user
+        sudo passwd mom               # add the psw for mom
+          
+        sudo groupadd nurses          # new group
+        tail /etc/group               # check the groups
+        sudo usermod -a -G nurses mom # add append(-G) mom to a groud, new group(-g) changing the primary
+        sudo userdel mom              # delete a user
+        sudo cat /etc/passwd          # user info
+        sudo cat /etc/shadow          # where the password are saved
+        
+        #asign a directory to a group
+        #add user with a differen home folder
+        sudo useradd -c "User Three" -d /home/STUDENTS/user3 -m user3 
+        sudo usermod -g STUDENTS user3     # user3 assigned at group STUDENTDS
+        sudo usermod -G FACULTY user3      # add user3 to this group
+        
+        sudo userdel user3                 # remove user
+        sudo userdel -r user3              # remove user and its home directory
 
-
-
-
-
-
-
-
-
+        sudo su user3                      # change/login to the user3
 
 
 
