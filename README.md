@@ -79,10 +79,11 @@
 
 6) How to check for open ports in Linux?
 
-        netstat 
+        netstat   # deprecated
         netstat -lepunt (tulpn)
         
         ss -tunapl
+        ss -tunpl
 
 7) How to check Linux process information (CPU usage, memory, user information, etc.)?
 
