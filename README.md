@@ -140,7 +140,10 @@
         sudo su user3                      # change/login to the user3
 
 
+## [Mounting files](https://linuxize.com/post/how-to-mount-and-unmount-file-systems-in-linux/)
 
+      blkid | grep sd
+      sudo fdisk -l | grep /dev/sd
 
 
 
