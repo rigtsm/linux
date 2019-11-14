@@ -145,8 +145,6 @@
       blkid | grep sd
       sudo fdisk -l | grep /dev/sd
 
-
-
-
+## [Goups](https://www.linux.com/tutorials/users-groups-and-other-linux-beasts/)
 
 
