@@ -145,6 +145,47 @@
       blkid | grep sd
       sudo fdisk -l | grep /dev/sd
 
-## [Goups](https://www.linux.com/tutorials/users-groups-and-other-linux-beasts/)
+## [Goups](https://www.linux.com/tutorials/users-groups-and-other-linux-beasts/) [2](https://www.linux.com/tutorials/users-groups-and-other-linux-beasts-part-2/)
+
+You can create new groups and then add users to them at will with the groupadd command in the way to share this directory. For example, using:
+
+- Create a group
+
+          sudo groupadd photos 
+
+- Create a directory
+
+          sudo mkdir /photos
+          
+- To transfer the ownership of the /photos directory to the photos group, use
+
+          sudo chgrp photos /photos
+
+- Then, add your own user and the guest user to the photos group:
+
+          sudo usermod <user_name> -a -G photos
+          sudo usermod guest -a -G photos 
+               # -a add the user to a supplementary group
+               # -G supplementary/non primary group
+          groups
+          
+Pacticing with [groups](https://www.linux.com/tutorials/how-manage-users-groups-linux/)
+Controlling [groups](https://www.tecmint.com/set-access-control-lists-acls-and-disk-quotas-for-users-groups/)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
