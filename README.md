@@ -183,6 +183,37 @@ You can create new groups and then add users to them at will with the groupadd c
 Pacticing with [groups](https://www.linux.com/tutorials/how-manage-users-groups-linux/)
 Controlling [groups](https://www.tecmint.com/set-access-control-lists-acls-and-disk-quotas-for-users-groups/)
 
+Commands for finding information about programs and files
+     
+     whereis java
+     locate java
+
+Debugging on the entire [script](http://www.tldp.org/LDP/Bash-Beginners-Guide/html/sect_02_03.html)
+
+     bash -x script1.sh
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
