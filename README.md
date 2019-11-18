@@ -51,7 +51,18 @@
      shutdown -h now #turn the machine off
      poweroff
      
+Lists all the PIDs of processes that contain the string “cp“.here is nifty tool that combines ps and grep all into one:
+      
+      pgrep cp
      
+In this case, -l tells pgrep to show you the name of the process and -x tells pgrep you want an exact match for the name of the command. If you want even more details, try pgrep -ax command.
+     
+     pgrep -lx cp
+
+Print the fifth column (a.k.a. field) in a space-separated file:
+    
+    awk '{print $5}' filename
+
 
 
 ## Interview Questions
