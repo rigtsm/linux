@@ -95,6 +95,8 @@ Print the fifth column (a.k.a. field) in a space-separated file:
         
         ss -tunapl
         ss -tunpl
+        
+        nmap -v <ip>
 
 7) How to check Linux process information (CPU usage, memory, user information, etc.)?
 
